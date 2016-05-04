@@ -207,6 +207,7 @@ class Runoff(object):
 						
 						# Process: Stream to Feature
 						arcpy.gp.StreamToFeature_sa(StreamReclass1000, FlowDirection1, StreamFeatureFinal, "SIMPLIFY")
+						
             log("Parameter is %s" % (parameters[0].valueAsText))
         except Exception as err:
             log(traceback.format_exc())
